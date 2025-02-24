@@ -1,0 +1,101 @@
+
+
+
+/* Reset */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+ 
+}
+
+
+
+h1 {
+
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+   font-family: cursive;
+
+}
+
+
+
+
+
+
+.container {
+
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+
+
+#timer {
+
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+.buttons button {
+
+    background: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+
+.buttons button:hover {
+
+    background: #e68900;
+}
+
+
+
+.pulse {
+
+    animation: pulse 1.5s infinite;
+}
+
+
+
+
+@keyframes pulse {
+
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
